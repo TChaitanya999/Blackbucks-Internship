@@ -2,7 +2,6 @@
 #  SS-Beauty-Products Business Management Web Application : <br>
 
 
-<img width="960" alt="Home Page" src="https://github.com/SnehalAShinde/Spring_Boot_Project/assets/126142130/3e29d81e-ac4d-4e4c-98fe-9aaf600867a3">
 
 
 ## Project Desc : Business Management Web Application 
