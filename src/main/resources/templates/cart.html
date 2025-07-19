@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SS Beauty - Your Cart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background-color: #fff5f8;
+    }
+    h1 {
+      text-align: center;
+      color: #e91e63;
+    }
+    .cart-list {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+    .cart-item {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #eee;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .cart-item img {
+      height: 80px;
+      width: 80px;
+      object-fit: contain;
+    }
+    .cart-info {
+      flex: 1;
+      padding: 0 20px;
+    }
+    .price {
+      font-weight: bold;
+      color: #333;
+    }
+    .btns {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .btns a {
+      background-color: #e91e63;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .btns a:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛍️ Your Cart</h1>
+  <div class="cart-list" id="cart-container">
+    <!-- JS will render cart items here -->
+  </div>
+
+  <div class="btns">
+    <a href="/home">🏠 Back to Home</a>
+  </div>
+
+  <script>
+    const cartContainer = document.getElementById('cart-container');
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    if (cart.length === 0) {
+      cartContainer.innerHTML = "<p style='text-align:center; color:gray;'>Your cart is empty 😢</p>";
+    } else {
+      cart.forEach(product => {
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+          <img src="${product.image}" />
+          <div class="cart-info">
+            <h3>${product.title}</h3>
+            <p class="price">₹${(product.price * 80).toFixed(2)}</p>
+          </div>
+        `;
+        cartContainer.appendChild(div);
+      });
+    }
+  </script>
+
+</body>
+</html>

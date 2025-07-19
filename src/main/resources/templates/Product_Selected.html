@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SS Beauty | Products</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #f6f6f6; }
+        .product { background: white; border: 1px solid #ddd; border-radius: 10px; padding: 15px; margin: 10px; width: 250px; display: inline-block; vertical-align: top; }
+        .product h3 { margin: 0 0 10px; }
+        .product p { margin: 0 0 10px; }
+        .btn { background: #e91e63; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        .btn:hover { background: #c2185b; }
+    </style>
+</head>
+<body>
+    <h1>Our Products</h1>
+    <div th:each="product : ${products}" class="product">
+        <h3 th:text="${product.name}">Product Name</h3>
+        <p th:text="${product.description}">Description</p>
+        <p><strong>₹</strong> <span th:text="${product.price}">0</span></p>
+        <form th:action="@{/add-to-cart}" method="post">
+            <input type="hidden" name="productId" th:value="${product.id}" />
+            <button type="submit" class="btn">Add to Cart</button>
+        </form>
+    </div>
+
+    <hr>
+    <a th:href="@{/cart}">🛒 View Cart (<span th:text="${#lists.size(cart)}">0</span> items)</a>
+</body>
+</html>
