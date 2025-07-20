@@ -1,4 +1,3 @@
-https://github.com/TChaitanya999/Blackbucks-Internship/blob/main/Screenshot%202025-07-19%20232423.png
 
 
 #  CART_HIVE E-Commerce Web Application : <br>
