@@ -63,7 +63,7 @@ spring.jpa.hibernate.ddl-auto=update <br>
 ## Preview :
 
 #### Products 
-<img width="960" alt="Product Page" src="[https://github.com/SnehalAShinde/Spring_Boot_Project/assets/126142130/afbd9286-8ca1-4708-9586-b6fed113cac3](https://github.com/TChaitanya999/Blackbucks-Internship/blob/main/Screenshot%202025-07-19%20232449.png)">
+<img width="960" alt="Product Page" src="(https://github.com/TChaitanya999/Blackbucks-Internship/blob/main/Screenshot%202025-07-19%20232449.png)">
 
 
 
