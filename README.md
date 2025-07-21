@@ -27,7 +27,7 @@
 
 ## Installation :
 
-1. Clone the repository :(https://github.com/TChaitanya999/Blackbucks-Internship.git)t  <br>
+1. Clone the repository :(https://github.com/TChaitanya999/Blackbucks-Internship.git)  <br>
            OR
    Download the zip
 
@@ -63,7 +63,7 @@ spring.jpa.hibernate.ddl-auto=update <br>
 ## Preview :
 
 #### Products 
-<img width="960" alt="Product Page" src="(https://github.com/TChaitanya999/Blackbucks-Internship/blob/main/Screenshot%202025-07-19%20232449.png)">
+<img width="960" alt="Product Page" src="https://github.com/TChaitanya999/Blackbucks-Internship/blob/main/Screenshot%202025-07-19%20232449.png">
 
 
 
